@@ -16,10 +16,8 @@ class MainScreen extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // We want this side menu only for large screen
             if (Responsive.isDesktop(context))
               Expanded(
-                // default flex = 1
                 child: SideMenu(),
               ),
             Expanded(
