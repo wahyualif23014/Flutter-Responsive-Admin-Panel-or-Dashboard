@@ -62,7 +62,16 @@ class ProfileCard extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-              child: Text("Angelina Jolie"),
+              child: Text("Sadewa buana"),
+              ),
+          if (!Responsive.isMobile(context))
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+              child: Text(
+                "Admin",
+                style: TextStyle(color: Colors.white54),
+              ),
+
             ),
           Icon(Icons.keyboard_arrow_down),
         ],
